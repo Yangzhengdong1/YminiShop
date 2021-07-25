@@ -1,0 +1,13 @@
+
+      var numToFixed = function(val) {
+        return val.toFixed(1)
+      }
+
+      var evaToFixed = function(val) {
+        return val.toFixed(2)
+      }
+
+      module.exports = {
+        numToFixed: numToFixed,
+        evaToFixed: evaToFixed
+      }

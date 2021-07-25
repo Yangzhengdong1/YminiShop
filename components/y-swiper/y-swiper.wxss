@@ -1,0 +1,14 @@
+/* components/y-swiper.wxss */
+
+.swiper{
+  width:100%;
+  height:calc(750rpx*500/1125);
+}
+.swiper .image{
+  width:100%;
+}
+
+.swiperHeight {
+  width:100%;
+  height: 640rpx;
+}

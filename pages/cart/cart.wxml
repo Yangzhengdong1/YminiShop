@@ -1,0 +1,49 @@
+<!--pages/cart/cart.wxml-->
+<view class="car">
+<!-- 购物车为空时显示 -->
+<view class="mask" wx:if="{{cartList.length === 0}}">
+  <image src="/assets/car/cart-mask.png" class="image"></image>
+  <view class="title">购物车空空如也，去逛逛吧~~ </view>
+</view>
+
+<!-- 主体 -->
+<view class="car-main">
+<block wx:for="{{cartList}}" wx:key="iid" wx:if="{{cartList.length !== 0}}">
+<view class="goods-item">
+  <view class="right {{item.checked ? 'bg' : ''}}" bind:tap="handleRadio" data-index="{{index}}">
+    <image src="/assets/car/tick.png" class="right-img"></image>
+  </view>
+  <view>
+    <image class="image" src="{{ item.image}}" ></image>
+  </view>
+  <view class="text">
+    <view class="title">{{item.title}}</view>
+    <view class="desc">{{item.desc}}</view>
+    <view class="info">
+      <text class="price">￥{{item.price}}</text>
+      <text class="count">x{{item.count}}</text>
+    </view>
+  </view>
+  </view>
+</block>
+</view>
+
+<!-- 底部bar -->
+<view class="bottom-bar">
+  <wxs src="../details/store/store.wxs" module="cart"></wxs>
+  <view class="item all">
+  <view class="right {{ selectAll ? 'bg' : ''}}" bind:tap="handleSelectAll" >
+    <image src="/assets/car/tick.png" class="right-img"></image>
+  </view>
+    <text style="font-size: 32rpx; font-weight: 700;" wx:if="{{selectAll}}">全不选</text>
+    <text style="font-size: 32rpx; font-weight: 700;" wx:if="{{!selectAll}}">全选</text>
+  </view>
+  <view class="item total">
+    <text>合计:</text>
+    <text>￥{{cart.evaToFixed(total)}}</text>
+  </view>
+  <view class="item calc" bind:tap="handleCalc">
+    去结算({{checkedList.length}})
+  </view>
+</view>
+</view>

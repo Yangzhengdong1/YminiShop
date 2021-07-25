@@ -1,0 +1,11 @@
+/* pages/details/details.wxss */
+.details {
+  padding-top: 88rpx;
+  padding-bottom: 100rpx;
+}
+
+.detail-back {
+  position: fixed;
+  bottom: 200rpx;
+
+}

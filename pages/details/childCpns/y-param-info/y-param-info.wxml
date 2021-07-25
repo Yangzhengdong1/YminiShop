@@ -1,0 +1,20 @@
+<!--pages/details/childCpns/y-param-info/y-param-info.wxml-->
+<view class="param-info">
+    <view class="table table-border">
+    <block wx:for="{{ itemParams.rule.tables[0] }}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
+      <view class="tr">
+        <block wx:for="{{ item1 }}" wx:key="index">
+          <view class="td">{{item1[index]}}</view>
+        </block>
+      </view>
+    </block>
+    </view>
+    <view class="table">
+      <block wx:for="{{ itemParams.info.set }}" wx:key="index">
+        <view class="tr">
+          <view class="td" style="width: 180rpx">{{ item.key }}</view>
+          <view class="td" style="color: rgb(226 51 81)">{{ item.value }}</view>
+        </view>
+      </block>
+    </view>
+  </view>

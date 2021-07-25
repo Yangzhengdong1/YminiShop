@@ -1,0 +1,20 @@
+/* pages/category/childCpns/y-category-main/y-category-main.wxss */
+.main-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-item {
+  flex: 1;
+  width: 33.3%;
+  min-width: 33.3%;
+  max-width: 33.3%; 
+  font-size: 24rpx;
+  color: rgb(145, 140, 140);
+  text-align: center;
+  margin: 26rpx 0;
+}
+
+.main-item .image {
+  width: 90rpx;
+  height: 90rpx;
+}

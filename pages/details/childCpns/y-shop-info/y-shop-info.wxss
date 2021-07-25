@@ -1,0 +1,60 @@
+/* pages/details/childCpns/y-shop-info/y-shop-info.wxss */
+.shop-info {
+  padding: 20rpx 14rpx 0 14rpx;
+}
+
+.title {
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.price-info {
+  margin: 20rpx 0;
+}
+
+.price {
+  color: #ff5777;
+  font-size: 42rpx;
+}
+
+.oldPrice {
+  color: #ccc;
+  font-size: 26rpx;
+  text-decoration:line-through;
+  padding: 16rpx 10rpx 0 10rpx;
+}
+
+.discountDesc {
+  font-size: 24rpx;
+  padding: 2rpx 10rpx;
+  color: rgb(255 255 255);
+  border-radius: 18rpx;
+  position: relative;
+  top: -18rpx;
+  letter-spacing: 4rpx;
+  background-color: #ff5777;
+}
+
+.columns-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #efebeb;
+  font-size: 24rpx;
+  color: #b9b4b4;
+}
+
+.services {
+  font-size: 26rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.icon {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}

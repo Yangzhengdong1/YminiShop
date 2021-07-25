@@ -1,0 +1,15 @@
+<!--pages/category/childCpns/y-sild.wxml-->
+<view class="side">
+    <scroll-view enhanced show-scrollbar="{{false}}" scroll-y style="height: 100%">
+      <block wx:for="{{ sideList }}" wx:key="maitKey">
+        <view class="side-title {{ index === currentIndex ? 'active' : ''}}" 
+              bind:tap="handleSideTitle" 
+              data-index="{{ index }}"
+              data-key="{{ item.maitKey }}"
+              data-miniWallkey="{{ item.miniWallkey }}" >
+              {{ item.title }}
+        </view>
+        
+      </block>
+    </scroll-view>
+  </view>

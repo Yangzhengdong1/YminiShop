@@ -1,0 +1,25 @@
+<!-- 首页 -->
+<view id="home">
+  <!-- 1、展示轮播图 -->
+  <y-swiper list="{{ banners }}"/>
+  <!-- 2、推荐数据的展示 -->
+  <y-recommend recommends = "{{ recommends }}" bind:imageload = "handleImageLoad"/>
+  <!-- 3、本周流行数据的展示 -->
+  <y-popular />
+  <!-- 4、tab-control  -->
+  <y-tab-control titles ="{{titles}}"
+                 bind:tabclick ="handleTabClick"
+                 id="tab-control"/>
+                 <!-- 隐藏吸顶 -->
+  <y-tab-control titles ="{{titles}}"
+                 class="fixed"
+                 wx:if="{{isTabShow}}"
+                 bind:tabclick ="handleTabClick"/>
+  <!-- 5、展示商品数据  -->
+  <y-goods goods="{{goods[currentType].list}}"/>
+
+  <!-- 6、回到顶部 -->
+  <!-- hidden：hidden 属性对于自定义组件是无效的 -->
+  <y-back-top wx:if="{{backTopShow}}"/>
+</view>
+

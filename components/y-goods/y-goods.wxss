@@ -1,0 +1,11 @@
+/* components/y-goods/y-goods.wxss */
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  position: relative;
+  width: 48%;
+}

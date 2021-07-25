@@ -1,0 +1,25 @@
+/* pages/details/childCpns/y-param-info/y-param-info.wxss */
+.param-info {
+  padding: 40rpx 18rpx;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tr {
+  display: table-row;
+  height: 100rpx;
+  font-size: 28rpx;
+}
+
+.td {
+  display: table-cell;
+  border-bottom: 4rpx solid rgb(221 215 215 / 50%);
+  vertical-align: middle!important;
+}
+
+.table-border {
+  border-bottom: 8rpx solid rgb(221 215 215 / 50%);
+}

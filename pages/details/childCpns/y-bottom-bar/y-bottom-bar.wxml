@@ -1,0 +1,15 @@
+<!--pages/details/childCpns/y-bottom-bar/y-bottom-bar.wxml-->
+<view class="bottom-bar">
+    <view class="bar-left item">
+      <block wx:for="{{ baroptions }}" wx:key="index">
+      <view class="item2">
+        <image src="{{item.url}}" class="image"></image>
+        <view>{{item.name}}</view>
+      </view>
+      </block>
+    </view>
+    <view class="bar-right item">
+      <view class="add-car" bind:tap="addShopCar">加入购物车</view>
+      <view class="buy">购买</view>
+    </view>
+  </view>

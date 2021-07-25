@@ -1,0 +1,15 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+  <y-side sideList="{{sideList}}" style="flex: 30%" bind:titleClcik="titleClcik" />
+  <view class="main">
+    <scroll-view  enhanced scroll-y show-scrollbar="{{false}}" style="height: 100%">
+    <view>
+      <y-category-main subCategoryData="{{ subCategoryData }}" bind:imageLoad="imageLoad" />
+      <y-tab-control titles="{{titles}}" bind:tabclick="handleTabClick" id="tab-control" />
+      <y-goods goods="{{ goods[currentType].list }}" />
+    </view>
+    </scroll-view>
+  </view>
+
+  <!-- <y-main style="flex:70%"/> -->
+</view>

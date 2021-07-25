@@ -1,0 +1,31 @@
+<!--pages/details/childCpns/y-rate/y-rate.wxml-->
+<block  wx:if="{{rate.cRate !== 0}}">
+<view class="rate">
+    <view class="title">
+      <view>用户评价</view>
+      <view class="more">更多</view>
+    </view>
+    <view class="rate-main">
+    <!-- 评价用户信息 -->
+      <view class="user">
+        <image class="user-avatar" src="{{ rate.list[0].user.avatar }}"/>
+        <text class="user-name">{{ rate.list[0].user.uname }}</text>
+      </view>
+      <!-- 评价具体内容 -->
+      <view class="rate-content" style="font-size: 26rpx">
+        {{ rate.list[0].content }}
+      </view>
+      <!-- 评价日期及商品类型 -->
+      <view class="rate-created">
+        <text style="margin-right: 8rpx">{{ date }}</text>
+        <text>{{ rate.list[0].style }}</text>
+      </view>
+      <!-- 晒图 -->
+      <view wx:if="{{ rate.list[0].images.length !== 0 }}">
+      <block wx:for="{{ rate.list[0].images }}" wx:key="index">
+        <image src="{{item}}" mode="widthFix"  class="image"/>
+      </block>
+      </view>
+    </view>
+  </view>
+</block>

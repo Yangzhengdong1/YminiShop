@@ -1,0 +1,58 @@
+/* pages/details/childCpns/y-rate/y-rate.wxss */
+.rate {
+  padding: 30rpx 16rpx;
+  border-top: 8rpx solid rgb(221 215 215 / 50%);
+  border-bottom: 8rpx solid rgb(221 215 215 / 50%);
+}
+
+.title {
+  position: relative;
+  border-bottom: 4rpx solid rgb(234 230 230);
+  padding: 18rpx 0;
+}
+
+.more {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 30rpx;
+  font-weight: 700;
+}
+
+.more::after {
+  content: '';
+  position: absolute;
+  right: -20rpx;
+  top: 10rpx;
+  width: 16rpx;
+  height: 16rpx;
+  border-bottom: 4rpx solid rgb(158 158 158);
+  border-right: 4rpx solid rgb(158 158 158);
+  transform: rotate( -45deg );
+}
+
+.user {
+  padding: 18rpx 0;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 16rpx;
+  width: 72rpx;
+  height: 72rpx;
+}
+.user-name {
+  font-weight: 700;
+}
+
+.rate-created {
+  font-size: 24rpx;
+  color: #ccc;
+  margin: 16rpx 0;
+}
+
+.image {
+  width: 160rpx;
+  margin-right: 16rpx;
+}

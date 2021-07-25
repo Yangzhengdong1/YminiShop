@@ -1,0 +1,29 @@
+<!--pages/details/childCpns/y-shop-info/y-shop-info.wxml-->
+<view class="shop-info">
+  <!-- 标题 -->
+    <view class="title">
+      {{goods.title}}
+    </view>
+    <!-- 价格 -->
+    <view class="price-info">
+      <text class="price">{{goods.newPrice}}</text>
+      <text class="oldPrice">{{goods.oldPrice}}</text>
+      <text class="discountDesc"
+            wx:if="{{goods.discount !== ''}}">{{goods.discount}}</text>
+    </view>
+    <!-- 销量 -->
+    <view class="columns-info">
+      <block wx:for="{{goods.columns}}" wx:key = "index">
+        <text>{{item}}</text>
+      </block>
+    </view>
+    <!-- 商品包证 -->
+    <view class="services">
+      <block wx:for="{{goods.services.length - 1}}" wx:key="index">
+        <view class="services-item">
+          <image src="{{goods.services[index].icon}}" class="icon"/>
+        <text>{{goods.services[index].name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>

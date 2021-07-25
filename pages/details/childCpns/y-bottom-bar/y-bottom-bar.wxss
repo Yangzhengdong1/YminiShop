@@ -1,0 +1,47 @@
+/* pages/details/childCpns/y-bottom-bar/y-bottom-bar.wxss */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+.item,
+.item2 {
+  flex: 1;
+}
+
+.bar-left {
+  display: flex;
+  align-items: flex-end;
+  font-size: 24rpx;
+}
+
+.bar-left .image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.bar-right {
+  display: flex;
+}
+
+.add-car {
+  background-color: #FFC107;
+  color: #6b6666;
+  flex: 1;
+  line-height: 100rpx;
+}
+
+.buy {
+  font-weight: 700;
+  font-size: 40rpx;
+  color: #fff;
+  background-color: #ff5777;
+  flex: 1;
+  line-height: 100rpx;
+}

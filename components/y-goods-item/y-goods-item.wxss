@@ -1,0 +1,34 @@
+.goods-item {
+  padding-bottom: 80rpx;
+  margin-top: 30rpx;
+}
+
+.goods-item .image {
+  width: 100%;
+  border-radius: 8rpx;
+}
+.desc-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.desc-info .title {
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.desc-info .info {
+  text-align: center;
+  font-size: 26rpx;
+}
+.info .price{
+  color: #f55777;
+}
+
+.info .img {
+  width: 26rpx;
+  height: 26rpx;
+  margin-left: 10rpx;
+}

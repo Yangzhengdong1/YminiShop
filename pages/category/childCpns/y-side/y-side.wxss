@@ -1,0 +1,13 @@
+/* pages/category/childCpns/y-sild.wxss */
+.side {
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(207 202 202 / 20%);
+}
+
+.side-title {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 26rpx;
+  text-align: center;
+}

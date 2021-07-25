@@ -1,0 +1,14 @@
+<!-- 商品列表展示的 item-->
+<view class="goods-item" 
+             bind:tap = "handleGoodsItem"
+             data-iid = "{{ item.iid }}">
+  <image src="{{item.show.img || item.image || item.img}}" class="image" mode="widthFix"/>
+  <view class="desc-info">
+    <view class="title">{{item.title}}</view>
+    <view class="info">
+     <text class="price">￥{{item.price}}</text>
+      <image src="/assets/tabbar/cfav.png" class="img"/>
+      <text class="cfav">{{item.cfav}}</text>
+    </view>
+  </view>
+</view>

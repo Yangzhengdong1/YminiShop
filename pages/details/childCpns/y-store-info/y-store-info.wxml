@@ -1,0 +1,44 @@
+<!--pages/details/childCpns/y-store-info/y-store-info.wxml-->
+<view class="store">
+    <wxs src="../../store/store.wxs" module="store" />
+    <!-- 商家店铺头像及名字 -->
+    <view class="store-title">
+      <image src="{{ storeInfo.shopLogo }}" class="image"></image>
+      <text class="store-name">{{ storeInfo.name }}</text>
+    </view>
+    <!-- 商店主体信息 -->
+    <view class="store-main">
+      <!--  商店销量以及宝贝剩余量 -->
+      <view class="store-main-left item">
+        <!-- 总销量 -->
+        <view class="cSells">
+          <view class="cSells-num">
+            {{ storeInfo.cSells > 10000 ? store.numToFixed(storeInfo.cSells / 10000) + '万' : storeInfo.cSells }}
+          </view>
+          <view class="cSells-txt">总销量</view>
+        </view>
+        <!-- 宝贝数量 -->
+        <view class="cGoods">
+          <view class="cGoods-num">
+            {{ storeInfo.cGoods > 10000 ? store.numToFixed(storeInfo.cGoods / 10000) + '万' : storeInfo.cGoods }}
+          </view>
+          <view class="cGoods-txt">全部宝贝</view>
+        </view>
+      </view>
+      <!-- 商店评价 -->
+      <view class="store-main-right item">
+        <block wx:for="{{ storeInfo.score }}" wx:key="index">
+          <view class="score">
+            <text style="color: #ccc">{{item.name}}</text>
+            <text style="color: pink">{{ store.evaToFixed(item.score) }}</text>
+            <text class="level {{item.isBetter === true ? 'better' : 'worse'}}"> {{item.isBetter === true ? '高' :
+              '低'}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <!-- 进店逛逛 -->
+    <view class="store-btn">
+      <text class="store-btn-txt">进店逛逛</text>
+    </view>
+  </view>

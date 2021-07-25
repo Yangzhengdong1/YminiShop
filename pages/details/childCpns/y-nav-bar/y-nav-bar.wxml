@@ -1,0 +1,16 @@
+<!--pages/details/childCpns/y-nav-bar/y-nav-bar.wxml-->
+<view class="nav-bar">
+  <view class="left">
+    <!-- <image src="/assets/tabbar/back.png" bind:tap="handleBack" class="image" /> -->
+  </view>
+  <view class="centre">
+    <block wx:for="{{ titles }}" wx:key="index">
+      <view bind:tap="navItemClick" 
+            data-index="{{index}}" 
+            class="{{ index === currentIndex ? 'active' : ''}}">
+            {{ item }}
+      </view>
+    </block>
+  </view>
+  <view class="right"></view>
+</view>

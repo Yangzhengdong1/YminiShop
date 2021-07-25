@@ -1,0 +1,25 @@
+<!-- 商品详情页 -->
+<view class="details">
+  <!-- 顶部导航栏 -->
+  <scroll-view scroll-y>
+  <y-nav-bar titles="{{titles}}" bind:navClick="handleLinkage" id="nav"/>
+  <!-- 轮播图 -->
+  <y-swiper list="{{swiperList}}" heightChange="{{true}}" id="shop"/>
+  <!-- 商品基本信息 -->
+  <y-shop-info goods="{{goods}}"/>
+  <!-- 商家信息 -->
+  <y-store-info storeInfo="{{ storeInfo }}"/>
+  <!-- 商品展示  -->
+  <y-detail-info detailInfo="{{ detailInfo }}" bind:imageload = "handleImageLoad"/>
+  <!-- 商品参数 -->
+  <y-param-info itemParams="{{ itemParams }}" id="param-info"/>
+  <!-- 商品评价 -->
+  <y-rate rate="{{ rate }}" date="{{ date }}" id="rate"/>
+  <!-- 商品推荐 -->
+  <y-goods goods="{{ recommends }}" id="recommend"/>
+
+  <!-- 回到顶部 -->
+  <y-back-top wx:if="{{ backTopShow }}" class="detail-back"/>
+  <!-- 底部 bar -->
+  <y-bottom-bar baroptions="{{baroptions}}" bind:handleAddCar="handleAddCar"/></scroll-view>
+</view>

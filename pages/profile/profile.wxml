@@ -1,0 +1,62 @@
+<!--登录页-->
+<view class="login">
+<!-- 登录页头部部分 -->
+  <view class="login-top">
+    <!-- 用户头像部分 -->
+    <view class="login-top-left" bind:tap="handleLogin">
+      <image src="/assets/profile/user.png" wx:if="{{userInfo.avatarUrl === undefined}}"></image>
+      <image src="{{userInfo.avatarUrl}}" wx:if="{{userInfo.avatarUrl !== undefined}}"></image>
+    </view>
+    <!-- 用户姓名部分 -->
+    <view class="login-top-centre">
+      <view class="login-title"  wx:if="{{userInfo.nickName === undefined}}">登录/注册</view>
+      <view class="user-name" wx:if="{{userInfo.nickName !== undefined}}">{{userInfo.nickName}}</view>
+      <view class="phone">
+        <image src="/assets/profile/phone.png" class="phone-img"></image>
+        <text class="phone-title">暂无绑定手机号</text>
+      </view>
+    </view>
+    <view class="login-top-right">
+     <image src="/assets/profile/arrow.png"></image>
+    </view>
+  </view>
+  <!-- 登录页主体部分 -->
+  <view class="login-main">
+  <!-- 主体部分头部区域 -->
+    <view class="login-main-top">
+      <view class="item balance">
+        <view><text class="num">0.00</text>元</view>
+        <view class="item-title">我的余额</view>
+      </view>
+      <view class="item discount">
+        <view><text class="num">0</text>个</view>
+        <view class="item-title">我的优惠</view>
+      </view>
+      <view class="item integral">
+        <view><text class="num">0</text>分</view>
+        <view class="item-title">我的积分</view>
+      </view>
+    </view>
+    <!-- 主体部分主要内容区域 -->
+    <view class="login-main-centre">
+    <!-- 我的消息 -->
+      <view class="list">
+       <block wx:for="{{list1}}" wx:key="index">
+        <view class="item1">
+          <image src="{{item.url}}"></image>
+          <text>{{item.title}}</text>
+        </view>
+       </block>
+      </view>
+      <!--我的购物车  -->
+      <view class="list">
+       <block wx:for="{{list2}}" wx:key="index">
+        <view class="item1">
+          <image src="{{item.url}}"></image>
+          <text>{{item.title}}</text>
+        </view>
+       </block>
+      </view>
+    </view>
+  </view>
+</view>

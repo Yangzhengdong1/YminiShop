@@ -1,0 +1,23 @@
+/* pages/category/category.wxss */
+.category {
+  display: flex;
+  height: calc(100vh);
+}
+
+
+
+.main {
+  flex: 70%;
+  height: 100%;
+  overflow: auto;
+}
+
+
+
+.active {
+  color: #ff5777;
+  border-left: 6rpx solid #ff5777;
+  font-weight: 700;
+  font-size: 28rpx;
+  background-color: #fff;
+}

@@ -1,0 +1,101 @@
+/* pages/details/childCpns/y-store-info/y-store-info.wxss */
+.store {
+  padding: 40rpx 14rpx;
+  border-top: 10rpx solid rgb(242 245 248);
+  border-bottom: 10rpx solid rgb(242 245 248);
+}
+
+.image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+  border: 4rpx solid rgb(209 205 205 / 50%);
+}
+
+.store-name {
+  color: #000;
+  font-weight: 700;
+}
+
+.store-main {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+.store-main-left {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.store-main-left::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 100rpx;
+  width: 2rpx;
+  background-color: #ccc;
+}
+.cGoods,
+.cSells {
+  flex: 1;
+}
+
+.cSells-txt,
+.cGoods-txt {
+  font-size: 28rpx;
+  color: #807b7b;
+}
+
+.cSells-num,
+.cGoods-num {
+  font-weight: 700;
+}
+
+.store-main-right .score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  margin-bottom: 2rpx;
+}
+
+.level {
+  padding: 10rpx;
+  color: #fff;
+}
+
+.store-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-btn-txt {
+  height: 80rpx;
+  width: 300rpx;
+  background-color: red;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 40rpx;
+}
+
+
+.better {
+  background-color: rgb(233, 10, 10);
+}
+
+.worse  {
+  background-color: rgb(18, 233, 18);
+}

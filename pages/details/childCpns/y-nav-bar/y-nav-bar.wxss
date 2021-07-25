@@ -1,0 +1,39 @@
+/* pages/details/childCpns/y-nav-bar/y-nav-bar.wxss */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 88rpx;
+  display: flex;
+  font-size: 28rpx;
+  background-color: #fff;
+}
+
+.left {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.centre {
+  flex: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  flex: 20%;
+}
+
+.active {
+  color: #ff5777;
+}

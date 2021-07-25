@@ -1,0 +1,9 @@
+<!--pages/category/childCpns/y-category-main/y-category-main.wxml-->
+<view class="main-body">
+      <block wx:for="{{ subCategoryData }}" wx:key="index">
+        <view class="main-item">
+          <image src="{{ item.image }}" class="image" bindload="handleImage"></image>
+          <view class="main-item-title">{{item.title}}</view>
+        </view>
+      </block> 
+    </view>

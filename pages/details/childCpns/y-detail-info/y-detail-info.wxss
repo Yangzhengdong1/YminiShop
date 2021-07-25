@@ -1,0 +1,20 @@
+/* pages/details/childCpns/y-detail-info/y-detail-info.wxss */
+.detail-info {
+  padding: 40rpx 14rpx;
+  border-bottom: 8rpx solid rgb(221 215 215 / 50%);
+}
+.desc {
+  padding: 20rpx 6rpx;
+  color: #ff5777;
+  text-indent: 66rpx;
+  border-top: 4rpx solid #f1aebb;
+  border-bottom: 4rpx solid #f1aebb;
+}
+.title {
+  padding: 10rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.image {
+  width: 100%;
+}

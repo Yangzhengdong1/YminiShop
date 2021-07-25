@@ -1,0 +1,4 @@
+<!-- 首页本周流行组件 -->
+<view class="popular">
+    <image src="/assets/home/recommend_bg.jpg" mode="widthFix" class="image"/>
+  </view>
